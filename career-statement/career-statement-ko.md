@@ -262,7 +262,7 @@ CREATE TABLE batch_target (
 
 ---
 
-**5) PG 조회 최소화 - Worker 레벨 In-Memory 캐싱**
+**5) PG 조회 최소화 - Worker 레벨 In-Memory 캐싱** 
 
 동일 결제 건(승인 → 취소 → 부분취소)에 대해 중복 PG 조회가 발생하고 있었습니다. DB 레벨에서는 확정 상태(CANCELED/REFUNDED) 거래와 정합성 일치 확인된 거래, 처리 완료(SUCCESS) 건을 사전에 필터링했고, Worker 레벨에서는 In-Memory Cache를 도입했습니다.
 

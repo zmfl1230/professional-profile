@@ -1,0 +1,255 @@
+{
+  "main": {
+    "id": "60970a1fb95b3a12",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f7cb99a7be8218c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5eb7d861803954b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-02-25.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-02-25"
+            }
+          },
+          {
+            "id": "8798727bad1c375e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.11.7"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "226139b7700c0cd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "c75ee345550543f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3390c398f8a2a18e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "8a08885736a184bb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "9282743931341a72",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 229.5
+  },
+  "right": {
+    "id": "ced42194c761af88",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e33803621fb75b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b589c827881018a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2025-01-02.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "2025-01-02의 백링크"
+            }
+          },
+          {
+            "id": "083cddcb63684d7b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2024-10-22.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2024-10-22의 나가는 링크"
+            }
+          },
+          {
+            "id": "9b32f17d5e4a173f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f74f3b5a6c1bad33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2025-01-02.md"
+              },
+              "icon": "lucide-list",
+              "title": "2025-01-02 개요"
+            }
+          },
+          {
+            "id": "16ad8b8b324ee856",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          },
+          {
+            "id": "0f32a3ce23d7e212",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 456.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "markdown-importer:마크다운 형식 불러오기 열기": false,
+      "canvas:새 캔버스 만들기": true,
+      "graph:그래프 뷰 열기": true,
+      "templates:템플릿 삽입": true,
+      "command-palette:명령어 팔레트 열기": true,
+      "switcher:빠른 전환기 열기": false
+    }
+  },
+  "active": "8798727bad1c375e",
+  "lastOpenFiles": [
+    "2026-02-24(대사 API).md",
+    "2026-02-25.md",
+    "Temp.md",
+    "2026-02-23.md",
+    "2026-02-09(Superpowers).md",
+    "Socar/테스트 데이터.md",
+    "2026-02-21.md",
+    "2026-01-21(Spring Batch 정리).md",
+    "2026-02-05.md",
+    "2026-02-19.md",
+    "2026-02-18.md",
+    "2026-02-17.md",
+    "무제.md",
+    "Spring Batch 동작 원리 Deep Dive.md",
+    "2026-02-07(취정사 멘토링).md",
+    "2026-02-10.md",
+    "대화형 재무 관리 서비스.md",
+    "2026-02-02.md",
+    "2026-02-03.md",
+    "2026-02-06.md",
+    "1월/2026-01-31.md",
+    "2025-12-31(이력서).md",
+    "2025-12-22(결제조회).md",
+    "2025-12-09.md",
+    "1월/2026-01-24.md",
+    "Daily/2026",
+    "1월",
+    "1월/2026-01-27.md",
+    "Daily/2025/12월",
+    "Private/독서 감상/기술 책/비트코인 블록체인 바이블/스크린샷 2025-12-13 오후 8.34.48.png",
+    "Private/독서 감상/기술 책/비트코인 블록체인 바이블",
+    "Daily/2025/11월",
+    "이지영의_경력기술서.pdf",
+    "Daily/2025/10월",
+    "무제.base",
+    "Daily/2025/9월",
+    "Daily/2025/8월",
+    "스크린샷 2025-06-16 오후 5.27.06.png",
+    "고잔역_149허6210.png",
+    "Pasted image 20250407143811.png",
+    "Private/블로깅/이미지/스크린샷 2025-01-18 오후 9.36.46.png",
+    "Private/블로깅/이미지/스크린샷 2025-01-18 오후 11.02.18.png",
+    "Private/블로깅/이미지/Pasted image 20250118211528.png",
+    "스크린샷 2025-01-18 오후 11.02.18 1.png",
+    "무제 파일.canvas",
+    "무제 파일 2.canvas",
+    "무제 파일 1.canvas",
+    "Socar/이미지/IMG_8518.jpg",
+    "Socar/이미지/IMG_8517.jpg"
+  ]
+}

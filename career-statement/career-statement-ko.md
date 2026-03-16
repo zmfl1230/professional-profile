@@ -109,18 +109,21 @@ batch_target 테이블 (거래별 상태 추적: READY → RUNNING → COMPLETED
 ```sql
 CREATE TABLE batch_target (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    batch_date DATE NOT NULL,
-    client_request_key VARCHAR(255) NOT NULL,
-    status VARCHAR(20) NOT NULL,  -- READY, RUNNING, COMPLETED, FAILED
-    job_execution_id BIGINT,
-    worker_id VARCHAR(50),
-    partition_id INT,
-    UNIQUE KEY uk_batch_target (batch_date, client_request_key),
-    INDEX idx_batch_date_status (batch_date, status)
+    batch_type VARCHAR(50) NOT NULL,
+    batch_target_date VARCHAR(20) NOT NULL,
+    batch_group INT NOT NULL,
+    partition_key VARCHAR(200) NOT NULL,
+    business_key VARCHAR(200) NOT NULL,
+    status VARCHAR(20) NOT NULL,  -- READY, RUNNING, SUCCESS, FAILED
+    step_execution_id BIGINT,
+    worker_hostname VARCHAR(100),
+    version BIGINT NOT NULL DEFAULT 0,
+    UNIQUE KEY batch_target_uk01 (batch_type, batch_target_date, business_key),
+    INDEX batch_target_ix01 (batch_target_date, batch_group, status)
 );
 ```
 
-상태를 관리하여 배치 재시작 시 중복 처리를 방지하고(COMPLETED 거래 자동 스킵), 워커 장애 시 RUNNING 레코드를 감지하여 복구할 수 있도록 했으며, Job 실행 정보나 파티션 할당 등의 데이터를 추적할 수 있도록 했습니다.
+상태를 관리하여 배치 재시작 시 중복 처리를 방지하고(SUCCESS 거래 자동 스킵), 워커 장애 시 RUNNING 레코드를 감지하여 복구할 수 있도록 했으며, Step 실행 정보나 파티션 할당 등의 데이터를 추적할 수 있도록 했습니다.
 
 ---
 
@@ -134,7 +137,7 @@ CREATE TABLE batch_target (
 
 **3) Append-Only 이력 + 스냅샷 분리**
 
-`payment_reconciliation_log` 테이블에 PG 조회 결과를 Append-only 방식으로 저장하여 불변 감사 로그를 유지하고, `payment_final` 테이블에는 거래일 기준 확정 상태를 저장하여 보고용으로 활용합니다. 이를 통해 규정 준수를 위한 불변 감사 로그를 유지하면서도 효율적인 쿼리 성능을 확보했습니다.
+`payment_provider_reconciliation_log` 테이블에 PG 조회 결과를 Append-only 방식으로 저장하여 불변 감사 로그를 유지하고, `payment_provider_reconciliation` 테이블에는 Payment 단위 최종 상태를 저장하여 보고용으로 활용합니다. 이를 통해 규정 준수를 위한 불변 감사 로그를 유지하면서도 효율적인 쿼리 성능을 확보했습니다.
 
 ---
 
